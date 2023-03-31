@@ -10,15 +10,6 @@
     <link href="./css/bootstrapColors.css" rel="stylesheet">
     <title>No encontrado - The Right Code</title>
   </head>
-  <style>
-    .img-responsive {
-      height: 0;
-      padding-bottom: 62.5%;
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-  </style>
   <body class="bg-primary text-white">
 
     <!-- HEADER -->
@@ -31,7 +22,7 @@
         </a>
         <ul class="nav nav-pills">
           <li class="nav-item"><a href="index.html" class="nav-link text-white">Home</a></li>
-          <li class="nav-item"><a href="browse.html" class="nav-link text-white">Browse</a></li>
+          <li class="nav-item"><a href="#" class="nav-link text-white bg-ternary active">Browse</a></li>
           <li class="nav-item"><a href="index.html#FAQ" class="nav-link text-white">FAQ</a></li>
           </ul>
         </ul>
@@ -39,48 +30,41 @@
     </div>
 
     <!-- MAIN CONTENT -->
+  <div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="thumbnail">
-            <div class="img-responsive" style="background-image: url('https://via.placeholder.com/800x500.png');"></div>
-            <div class="caption">
-              <h3>Image 1</h3>
-              <p class="text-right">Some description of Image 1 <button class="btn btn-primary">Button 1</button></p>
-            </div>
+    <!-- SIDEBAR -->
+
+    <div class="flex-shrink-0 p-3 border-end bg-primary" style="width: 280px;">
+      <a href="/" class="d-flex align-items-center pb-3 mb-3 text-decoration-none border-bottom">
+        <span class="fs-5 text-white fw-semibold">Algoritmos</span>
+      </a>
+      <ul class="list-unstyled ps-0 text-white">
+        <li class="mb-1">
+          <button class="btn btn-toggle bg-ternary text-white align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#intro-collapse" aria-expanded="false">
+            Introduccion
+          </button>
+          <div class="collapse" id="intro-collapse">
+            <ul class="btn-toggle-nav text-white list-unstyled fw-normal pb-1 small">
+              <li class="ps-3 "><a href="#" class="link-light rounded lead text-decoration-none">• ¿Qué es esto?</a></li>
+              <li class="ps-3"><a href="#" class="link-light rounded lead text-decoration-none">• placeholder</a></li>
+              <li class="ps-3"><a href="#" class="link-light rounded lead text-decoration-none">• placeholder</a></li>
+            </ul>
           </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="thumbnail">
-            <div class="img-responsive" style="background-image: url('https://via.placeholder.com/800x500.png');"></div>
-            <div class="caption">
-              <h3>Image 2</h3>
-              <p class="text-right">Some description of Image 2 <button class="btn btn-primary">Button 2</button></p>
-            </div>
+        </li>
+        <li class="mb-1">
+          <button class="btn btn-toggle bg-ternary text-white align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#syntax-collapse" aria-expanded="false">
+            placeholder
+          </button>
+          <div class="collapse" id="syntax-collapse">
+            <ul class="btn-toggle-nav text-white list-unstyled fw-normal pb-1 small">
+              <li class="ps-3 "><a href="#" class="link-light rounded lead text-decoration-none">• placeholder</a></li>
+              <li class="ps-3"><a href="#" class="link-light rounded lead text-decoration-none">• placeholder</a></li>
+              <li class="ps-3"><a href="#" class="link-light rounded lead text-decoration-none">• placeholder</a></li>
+            </ul>
           </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="thumbnail">
-            <div class="img-responsive" style="background-image: url('https://via.placeholder.com/800x500.png');"></div>
-            <div class="caption">
-              <h3>Image 3</h3>
-              <p class="text-right">Some description of Image 3 <button class="btn btn-primary">Button 3</button></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="thumbnail">
-            <div class="img-responsive" style="background-image: url('https://via.placeholder.com/800x500.png');"></div>
-            <div class="caption">
-              <h3>Image 4</h3>
-              <p class="text-right">Some description of Image 4 <button class="btn btn-primary">Button 4</button></p>
-            </div>
-          </div>
-        </div>
-      </div>
+        </li>
+        <li class="border-top my-3"></li>
+      </ul>
     </div>
 
     <!-- FOOTER -->
@@ -93,6 +77,7 @@
         <p class="text-center text-muted">&copy; Atelier d'Historia 2022</p>
       </footer>
     </div>
-
+  
+  </div>
   </body>
 </html>
