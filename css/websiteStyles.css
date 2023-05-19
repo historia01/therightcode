@@ -1,0 +1,56 @@
+.nav-link:hover {
+    background-color: #eeb79f;
+    transition: color 0.5s ;
+}
+
+.thumbnail {
+    background: #ffe2d6;
+    margin: 1%;
+    padding: 2%;
+    border: solid #ffc3a9 8px;
+    border-radius: 10px;
+}
+
+.cardImage {
+    max-width: 100%;
+    border: solid #FF763C 5px;
+    border-radius: 15px;
+}
+
+.cardText {
+    background: #ffcbb5;
+    margin: 1%;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+i {
+    color: #cf4408;
+}
+
+b {
+    color: #692000;
+}
+
+.codeSnippet {
+    margin: 10px;
+    background: #eeb79f;
+    border-left: solid 3px #692000;
+    padding-block: 10px;
+}
+
+.codeSnippetText {
+    background: white;
+    margin-inline:  1%;
+    padding: 10px;
+    border-radius: 10px;
+    border-left: 10px solid #692000;
+    font-style: italic;
+    
+}
+
+.codeSnippetTitle {
+    padding-block: 10px;
+    padding-inline: 2%;
+    
+}
