@@ -54,3 +54,17 @@ b {
     padding-inline: 2%;
     
 }
+
+.navButton {
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    background-color: #cf4408;
+    color: white;
+    border-radius:3px;
+    width: 49%;
+}
+
+.navButton:hover {
+    background-color: #e68a62;
+}
