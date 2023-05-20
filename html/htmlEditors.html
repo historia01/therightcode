@@ -14,14 +14,14 @@
     <script>
       $(document).ready(function(){
         $("#navNext").click(function(){
-          window.location.href='./jsSyntax.html'
+          window.location.href='./htmlEditors.html'
         })
         $("#navBack").click(function(){
-          window.location.href='../browse.html'
+          window.location.href='./htmlIntro.html'
         })
       });
     </script>
-    <title>JavaScript Introduccion - The Right Code</title>
+    <title>Editores HTML - The Right Code</title>
   </head>
   <body class="bg-primary text-black">
 
@@ -50,7 +50,7 @@
 
     <div class="col-3 flex-shrink-0 p-3 border-end bg-primary" style="width: 280px;">
       <a href="/" class="d-flex align-items-center pb-3 mb-3 text-decoration-none border-bottom">
-        <span class="fs-5 ps-2 text-black fw-semibold">JavaScript</span>
+        <span class="fs-5 ps-2 text-black fw-semibold">HTML</span>
       </a>
       <ul class="list-unstyled ps-4 text-black">
         <li class="mb-1">
@@ -59,23 +59,16 @@
           </button>
           <div class="collapse" id="intro-collapse">
             <ul class="btn-toggle-nav text-black list-unstyled fw-normal pb-1 small">
-              <li class="ps-3 "><a href="#" class=" rounded lead text-decoration-none currentPage">• Introduccion</a></li>
-              <li class="ps-3"><a href="./jsSyntax.html" class=" rounded lead text-decoration-none">• Sintaxis</a></li>
-              <li class="ps-3"><a href="./jsVarType.html" class=" rounded lead text-decoration-none">• Variables y Tipos de Datos</a></li>
-              <li class="ps-3"><a href="#" class=" rounded lead text-decoration-none">• Operadores</a></li>
-              <li class="ps-3"><a href="#" class=" rounded lead text-decoration-none">• Aritmetica</a></li>
-              <li class="ps-3"><a href="#" class=" rounded lead text-decoration-none">• Funciones</a></li>
-            </ul>
-          </div>
-        </li>
-        <li class="mb-1">
-          <button style="color:#000 !important" class="btn btn-toggle bg-secondary  align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#syntax-collapse" aria-expanded="false">
-            JavaScript y HTML
-          </button>
-          <div class="collapse" id="syntax-collapse">
-            <ul class="btn-toggle-nav text-black list-unstyled fw-normal pb-1 small">
-              <li class="ps-3 "><a href="#" class=" rounded lead text-decoration-none">• Jquery</a></li>
-              <li class="ps-3 "><a class=" rounded lead text-decoration-none text-muted">• Proximamente</a></li>
+              <li class="ps-3 "><a href="./htmlIntro.html" class=" rounded lead text-decoration-none">• Introduccion</a></li>
+              <li class="ps-3"><a href="#" class=" rounded lead text-decoration-none currentPage">• Editores</a></li>
+              <li class="ps-3"><a href="#" class=" rounded lead text-decoration-none">• Basicas</a></li>
+              <li class="ps-3"><a href="#" class=" rounded lead text-decoration-none">• Elementos</a></li>
+              <li class="ps-3"><a href="#" class=" rounded lead text-decoration-none">• Texto e Imagenes</a></li>
+              <li class="ps-3"><a href="#" class=" rounded lead text-decoration-none">• Atributos</a></li>
+              <li class="ps-3"><a href="#" class=" rounded lead text-decoration-none">• Formato</a></li>
+              <li class="ps-3"><a href="#" class=" rounded lead text-decoration-none">• Colores</a></li>
+              <li class="ps-3"><a href="#" class=" rounded lead text-decoration-none">• Clases e Identificadores</a></li>
+              <li class="ps-3"><a href="#" class=" rounded lead text-decoration-none">• Iframes</a></li>
             </ul>
           </div>
         </li>
@@ -84,23 +77,10 @@
     </div>
     <div class="col-9" style="display: flex; align-items: center;">
       <div>
-        <h1 class="text text-black text-center py-2 mx-5">Introduccion a JavaScript</h1>
-        <h2 class="text-muted text text-black text-center py-2 mx-5 border-bottom">¿Qué es JavaScript?</h2>
-        <p class="lead py-2 px-4">JavaScript es un lenguaje de programación muy utilizado para crear elementos interactivos en sitios web. Permite la funcionalidad dinámica, la manipulación de datos, el manejo de eventos y mucho más. JavaScript es flexible, admite programación orientada a objetos y es esencial para el desarrollo web moderno.</p>
-        <h2 class="px-5">JavaScript puede cambiar contenido HTML</h2>
-        <p class="lead py-2 px-4">Uno de los muchos métodos HTML de JavaScript es <i>getElementById()</i>.
-        <br>El ejemplo siguiente "encuentra" un elemento HTML <i>(con id="demo")</i>, y cambia el contenido del elemento <i>(innerHTML)</i> a <b>"Hola JavaScript"</b>:</p>
-        <div class="codeSnippet"><h3 class="codeSnippetTitle">Ejemplo:</h3><iframe class="codeSnippetText" src="./examples/helloword.html"></iframe></div>
-        <h2 class="px-5">JavaScript puede cambiar los valores de los atributos HTML</h2>
-        <p class="lead py-2 px-5">En este ejemplo, JavaScript cambia el valor del atributo <i>src</i> (fuente) de una etiqueta <i>&lt;img&gt;</i>:</p>
-        <div class="codeSnippet"><h3 class="codeSnippetTitle">Ejemplo:</h3><iframe class="codeSnippetText" src="./examples/lightbulb.html" height="256px"></iframe></div>
-        <h2 class="px-5">JavaScript puede estilos CSS</h2>
-        <p class="lead py-2 px-5">En el siguiente ejemplo los botones cambian el valor CSS <i>background-color</i> del elemento <i>box</i>:</p>
-        <div class="codeSnippet"><h3 class="codeSnippetTitle">Ejemplo</h3><iframe class="codeSnippetText" src="./examples/color.html"></iframe></div>
-        <div class="row">
+        <h1 class="text text-black text-center py-2 mx-5">Variables y Tipos de Datos</h1>
+        <h1 class="tw-bold text-center py-5">En construccion!</h1>
+      <img src="https://media.tenor.com/p9tEvkPxvfUAAAAC/cells-at-work.gif" class="px-4 py-5">
           <div class="navButton" id="navBack"><a>Anterior</a></div>
-          <div class="navButton" id="navNext"><a>Siguiente</a></div>
-        </div>
       </div>
     </div>
     <!-- FOOTER -->

@@ -14,10 +14,10 @@
     <script>
       $(document).ready(function(){
         $("#navNext").click(function(){
-          window.location.href='./jsSyntax.html'
+          window.location.href='./jsVarType.html'
         })
         $("#navBack").click(function(){
-          window.location.href='../browse.html'
+          window.location.href='./jsIntro.html'
         })
       });
     </script>
@@ -52,15 +52,15 @@
       <a href="/" class="d-flex align-items-center pb-3 mb-3 text-decoration-none border-bottom">
         <span class="fs-5 ps-2 text-black fw-semibold">JavaScript</span>
       </a>
-      <ul class="list-unstyled ps-4 text-black">
+      <ul class="list-unstyled ps-4 ps-0 text-black">
         <li class="mb-1">
           <button style="color:#000 !important" class="btn btn-toggle bg-secondary  align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#intro-collapse" aria-expanded="false">
             Introduccion
           </button>
           <div class="collapse" id="intro-collapse">
             <ul class="btn-toggle-nav text-black list-unstyled fw-normal pb-1 small">
-              <li class="ps-3 "><a href="#" class=" rounded lead text-decoration-none currentPage">• Introduccion</a></li>
-              <li class="ps-3"><a href="./jsSyntax.html" class=" rounded lead text-decoration-none">• Sintaxis</a></li>
+              <li class="ps-3 "><a href="./jsIntro.html" class=" rounded lead text-decoration-none">• Introduccion</a></li>
+              <li class="ps-3"><a href="#" class=" rounded lead text-decoration-none currentPage">• Sintaxis</a></li>
               <li class="ps-3"><a href="./jsVarType.html" class=" rounded lead text-decoration-none">• Variables y Tipos de Datos</a></li>
               <li class="ps-3"><a href="#" class=" rounded lead text-decoration-none">• Operadores</a></li>
               <li class="ps-3"><a href="#" class=" rounded lead text-decoration-none">• Aritmetica</a></li>
@@ -84,19 +84,33 @@
     </div>
     <div class="col-9" style="display: flex; align-items: center;">
       <div>
-        <h1 class="text text-black text-center py-2 mx-5">Introduccion a JavaScript</h1>
-        <h2 class="text-muted text text-black text-center py-2 mx-5 border-bottom">¿Qué es JavaScript?</h2>
-        <p class="lead py-2 px-4">JavaScript es un lenguaje de programación muy utilizado para crear elementos interactivos en sitios web. Permite la funcionalidad dinámica, la manipulación de datos, el manejo de eventos y mucho más. JavaScript es flexible, admite programación orientada a objetos y es esencial para el desarrollo web moderno.</p>
-        <h2 class="px-5">JavaScript puede cambiar contenido HTML</h2>
-        <p class="lead py-2 px-4">Uno de los muchos métodos HTML de JavaScript es <i>getElementById()</i>.
-        <br>El ejemplo siguiente "encuentra" un elemento HTML <i>(con id="demo")</i>, y cambia el contenido del elemento <i>(innerHTML)</i> a <b>"Hola JavaScript"</b>:</p>
-        <div class="codeSnippet"><h3 class="codeSnippetTitle">Ejemplo:</h3><iframe class="codeSnippetText" src="./examples/helloword.html"></iframe></div>
-        <h2 class="px-5">JavaScript puede cambiar los valores de los atributos HTML</h2>
-        <p class="lead py-2 px-5">En este ejemplo, JavaScript cambia el valor del atributo <i>src</i> (fuente) de una etiqueta <i>&lt;img&gt;</i>:</p>
-        <div class="codeSnippet"><h3 class="codeSnippetTitle">Ejemplo:</h3><iframe class="codeSnippetText" src="./examples/lightbulb.html" height="256px"></iframe></div>
-        <h2 class="px-5">JavaScript puede estilos CSS</h2>
-        <p class="lead py-2 px-5">En el siguiente ejemplo los botones cambian el valor CSS <i>background-color</i> del elemento <i>box</i>:</p>
-        <div class="codeSnippet"><h3 class="codeSnippetTitle">Ejemplo</h3><iframe class="codeSnippetText" src="./examples/color.html"></iframe></div>
+        <h1 class="text text-black text-center py-2 mx-5">Sintaxis de JavaScript</h1>
+        <h2 class="text-muted text text-black text-center py-2 mx-5 border-bottom">Variables</h2>
+        <p class="lead py-2 px-4">La sintaxis de define dos tipos de valores:<br></p>
+        <p class="lead px-5">•<i> Valores Fijos</i><br>•<i> Valores Variables</i></p>
+        <p class="lead py-2 px-4">Valores fijos son llamados <b>Literares</b><br>Valores Variables son llamados <b>Variables</b></p>
+        <h2 class="px-5">JavaScript valores Literales</h2>
+        <p class="lead py-2 px-4">1. Numeros pueden ser con o sin decimal</p>
+        <div class="codeSnippet"></h3><p class="codeSnippetText"><b>1.15</b><br><b>22</b></p></div>
+        <p class="lead py-2 px-4">1. Cadenas de texto <i>(Strings)</i> pueden ser definidas con comillas o apostrofes:</p>
+        <div class="codeSnippet"></h3><p class="codeSnippetText"><b>"Hola javascript"</b><br><b>'Hola Mundo'</b></p></div>
+        <h2 class="px-5">JavaScript Variables</h2>
+        <p class="lead py-2 px-4">En un lenguaje de programación, las variables se utilizan para almacenar valores de datos. JavaScript utiliza las palabras clave var, let y const para declarar variables. El signo igual se utiliza para asignar valores a las variables. En este ejemplo, x se define como variable.
+          <br>A continuación, se asigna a <b>x</b> el valor 6:</p>
+        <div class="codeSnippet"><p class="codeSnippetText">let x;<br>x = 6;</p></div>
+        <h2 class="px-5">JavaScript Operadores</h2>
+        <p class="lead py-2 px-4">JavaScript usa operadores aritmeticos para computar valores:</p>
+        <div class="codeSnippet"><p class="codeSnippetText"><b>( 5 + 6 ) * 10</b><i class="text-muted"> //resultado 110</i><br><b>10 / 5</b><i class="text-muted"> //resultado 2</i></p></div>
+        <h2 class="px-5">JavaScript Expresiones</h2>
+        <p class="lead py-2 px-4">Una expresión es una combinación de valores, variables y operadores que calcula un valor. Estos pueden tambien contener variables</p>
+        <div class="codeSnippet"><p class="codeSnippetText"><b>let x = 5;</b><br><b>x = x + 5;</b><i class="text-muted">    //resultado 10</i></p></div>
+        <h2 class="px-5">JavaScript Palabras Claves</h2>
+        <p class="lead py-2 px-4">Son palabras reservadas por el lenguaje de programación para realizar acciones.</p>
+        <p class="lead py-2 px-4"><i>let</i> nos deja crear variables:</p>
+        <div class="codeSnippet"><p class="codeSnippetText"><b>let x = 5;</b></p></div>
+        <p class="lead py-2 px-4"><i>var</i> tambien nos deja crear variables:</p>
+        <div class="codeSnippet"><p class="codeSnippetText"><b>var x = 5;</b></p></div>
+        <p class="lead py-2 px-4">El tema de las variables se retomara en <a href="#">Variables y Tipos de Datos</a></p>
         <div class="row">
           <div class="navButton" id="navBack"><a>Anterior</a></div>
           <div class="navButton" id="navNext"><a>Siguiente</a></div>

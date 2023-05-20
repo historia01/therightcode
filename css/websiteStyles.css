@@ -37,6 +37,7 @@ b {
     background: #eeb79f;
     border-left: solid 3px #692000;
     padding-block: 10px;
+    border-radius: 10px;
 }
 
 .codeSnippetText {
@@ -46,6 +47,8 @@ b {
     border-radius: 10px;
     border-left: 10px solid #692000;
     font-style: italic;
+    color: #692000;
+    font-weight: 600;
     
 }
 
@@ -67,4 +70,12 @@ b {
 
 .navButton:hover {
     background-color: #e68a62;
+}
+
+.currentPage {
+    color: blueviolet;
+}
+
+.currentPage:hover {
+    color: rgb(184, 108, 255);
 }
